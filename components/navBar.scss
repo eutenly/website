@@ -1,0 +1,193 @@
+@import "../global";
+
+#nav-bar {
+    position: fixed;
+    display: flex;
+    width: calc(100% - 70px);
+    height: 55px;
+    top: 0px;
+    left: 0px;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #9e1e3add;
+    padding: 0px 35px;
+    z-index: 100;
+
+    .home-button {
+        padding-top: 5px;
+        margin-right: 15px;
+
+        img {
+            width: auto;
+            height: 40px;
+        }
+    }
+
+    .bar {
+        padding: 15px 0px;
+
+        @media screen and (max-width: 850px) {
+            display: none;
+        }
+
+        .nav-bar-button {
+            color: white;
+            font-family: "Roboto";
+            font-size: 20px;
+            text-decoration: none;
+            padding: 0px 25px;
+        }
+    }
+
+    .menu-button {
+        position: relative;
+        width: 16px;
+        margin-left: auto;
+        cursor: pointer;
+        transition: 0.5s;
+
+        @media screen and (min-width: 851px) {
+            display: none;
+        }
+
+        &.cross {
+            margin-right: 5px;
+        }
+
+        .line-border {
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            top: -7px;
+            left: -7px;
+            border: 2px #ffffff50 solid;
+            transition: 0.5s;
+
+            &.cross {
+                opacity: 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            transition: 0.5s;
+
+            &.cross {
+                width: 150%;
+            }
+
+            &.line-1 {
+                &.cross {
+                    transform: translateY(7px) rotate(45deg);
+                }
+            }
+
+            &.line-2 {
+                margin-top: 5px;
+                @include center;
+
+                &.cross {
+                    width: 0px;
+                }
+            }
+
+            &.line-3 {
+                margin-top: 5px;
+
+                &.cross {
+                    transform: translateY(-7px) rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    .menu {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 55px);
+        top: 55px;
+        left: 0px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        pointer-events: none;
+
+        flex-direction: column;
+
+        @media screen and (min-width: 851px) {
+            display: none;
+        }
+
+        &.open {
+            pointer-events: all;
+        }
+
+        .menu-background {
+            position: absolute;
+            width: 150%;
+            height: 0px;
+            top: 0px;
+            left: -25%;
+            background-image: linear-gradient(#9e1e3add, #fb1707dd);
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+            z-index: -1;
+            transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+            &.open {
+                height: 100%;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+
+        .menu-content {
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: 0.25s;
+
+            &.open {
+                opacity: 1;
+                transform: translateY(0px);
+                transition: 0.5s 0.25s;
+            }
+
+            .menu-menu-button {
+                display: inline-flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                margin: 20px 0px;
+                @include center;
+
+                .button-icon {
+                    width: auto;
+                    height: 30px;
+                }
+
+                .button-text {
+                    color: white;
+                    font-family: "Roboto Black";
+                    font-size: 7vw;
+                    text-align: center;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    margin: 0px;
+                    margin-left: 25px;
+                }
+            }
+
+            .line {
+                width: 20%;
+                height: 2px;
+                background-color: #ffffff85;
+                margin-top: 55px;
+                @include center;
+            }
+        }
+    }
+}
