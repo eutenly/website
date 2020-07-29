@@ -1,0 +1,368 @@
+@import "../global";
+
+#index {
+    .intro {
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        margin-top: 55px;
+
+        @media screen and (max-width: 1200px) {
+            display: block;
+        }
+
+        .background-effect {
+            position: absolute;
+            width: calc(65% + 50px);
+            height: calc(100vh - 55px);
+            top: 55px;
+            left: 0px;
+            background-image: linear-gradient(#5e1021, #921631);
+            z-index: -1;
+
+            clip-path: polygon(0 0, 100% 0, calc(100% - 200px) 100%, 0% 100%);
+
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+                top: 105px;
+                left: 0px;
+
+                clip-path: none;
+            }
+        }
+
+        .about {
+            width: 65%;
+            height: calc(100vh - 100px);
+            background-image: linear-gradient(#9e1e3a, #cc1d43);
+
+            clip-path: polygon(0 0, 100% 0, calc(100% - 190px) 100%, 0% 100%);
+
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+                height: calc(100vh - 55px);
+
+                clip-path: none;
+            }
+
+            .about-content {
+                width: calc(100% - 200px);
+
+                @media screen and (max-width: 1200px) {
+                    width: 100%;
+                }
+
+                .title {
+                    display: inline-block;
+                    color: white;
+                    font-family: "Roboto Black";
+                    font-size: 85px;
+                    margin-top: 135px;
+                    margin-bottom: auto;
+                    margin-left: 15%;
+
+                    @media screen and (max-width: 1200px) {
+                        margin-top: 65px;
+                        @include center;
+                    }
+                }
+
+                .info {
+                    color: white;
+                    font-family: "Roboto";
+                    font-size: 30px;
+                    white-space: nowrap;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-left: 15%;
+
+                    @media screen and (max-width: 1200px) {
+                        display: inline-block;
+                        @include center;
+                    }
+                }
+
+                .divider {
+                    width: 40%;
+                    height: 2px;
+                    background-color: #ffffff50;
+                    margin: 65px 0px;
+                    margin-left: 15%;
+
+                    @media screen and (max-width: 1200px) {
+                        @include center;
+                    }
+                }
+
+                .description {
+                    width: 80%;
+                    color: white;
+                    font-family: "Roboto";
+                    font-size: 23px;
+                    margin-top: auto;
+                    margin-bottom: 35px;
+                    margin-left: 15%;
+
+                    @media screen and (max-width: 1200px) {
+                        display: inline-block;
+                        @include center;
+                    }
+                }
+            }
+        }
+
+        .intro-features-wrapper {
+            display: flex;
+            width: 35%;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+                margin: 105px 0px;
+            }
+
+            .intro-features {
+                width: 100%;
+
+                .title {
+                    width: 80%;
+                    color: white;
+                    font-family: "Roboto Black";
+                    font-size: 35px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    @include center;
+                }
+
+                .intro-feature {
+                    padding: 0px 35px;
+                    margin-top: 65px;
+
+                    .name {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        .icon {
+                            width: auto;
+                            height: 35px;
+                            margin-left: 35px;
+                        }
+
+                        .text {
+                            color: white;
+                            font-family: "Roboto";
+                            font-size: 25px;
+                            text-align: center;
+                            white-space: nowrap;
+                            margin: 0px;
+                            margin-left: 25px;
+                            margin-right: 35px;
+                        }
+
+                        .divider {
+                            height: 2px;
+                            flex-grow: 1;
+                            background-color: #f40b3d50;
+
+                            @media screen and (max-width: 500px) {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .learn-more {
+                        display: inline-block;
+                        color: #f40b3d;
+                        font-family: "Roboto";
+                        font-size: 20px;
+                        margin-top: 25px;
+                        cursor: pointer;
+                        @include center;
+                    }
+                }
+
+                .more-features {
+                    display: inline-block;
+                    color: #f40b3d;
+                    font-family: "Roboto";
+                    font-size: 25px;
+                    margin-top: 65px;
+                    cursor: pointer;
+                    @include center;
+                }
+            }
+        }
+    }
+
+    .features {
+        width: 100%;
+        margin-top: 165px;
+        margin-bottom: 85px;
+
+        .title {
+            width: 80%;
+            color: white;
+            font-family: "Roboto Black";
+            font-size: 35px;
+            text-align: center;
+            text-transform: uppercase;
+            @include center;
+        }
+
+        .feature {
+            display: flex;
+            width: 90%;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 65px;
+            @include center;
+
+            @media screen and (max-width: 1200px) {
+                flex-direction: column;
+            }
+
+            &.right {
+                flex-direction: row-reverse;
+
+                @media screen and (max-width: 1200px) {
+                    flex-direction: column;
+                }
+            }
+
+            .content {
+                width: 65%;
+
+                @media screen and (max-width: 1200px) {
+                    width: 100%;
+                }
+            }
+
+            .name {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 65px;
+
+                .icon {
+                    width: auto;
+                    height: 35px;
+
+                    @media screen and (max-width: 1200px) {
+                        margin-left: 35px;
+                    }
+
+                    &.margin {
+                        margin-left: 35px;
+                    }
+                }
+
+                .text {
+                    color: white;
+                    font-family: "Roboto";
+                    font-size: 25px;
+                    text-align: center;
+                    white-space: nowrap;
+                    margin: 0px;
+                    margin-left: 25px;
+                    margin-right: 35px;
+
+                    &.highlight {
+                        color: #ffcd43;
+                    }
+                }
+
+                .divider {
+                    height: 2px;
+                    flex-grow: 1;
+                    background-color: #f40b3d50;
+
+                    &.left {
+                        display: none;
+
+                        @media screen and (max-width: 1200px) {
+                            display: initial;
+                        }
+                    }
+
+                    &.highlight {
+                        background-color: #ffcd43;
+                    }
+                }
+            }
+
+            .description {
+                color: white;
+                font-family: "Roboto";
+                font-size: 20px;
+                margin-top: 25px;
+            }
+
+            .more-features {
+                margin-top: 65px;
+
+                list-style-position: inside;
+
+                li {
+                    color: white;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 25px;
+                }
+            }
+
+            .ready-to-try {
+                display: inline-block;
+                color: #f40b3d;
+                font-family: "Roboto";
+                font-size: 20px;
+                margin-top: 65px;
+                @include center;
+
+                &.highlight {
+                    color: #ffcd43;
+                }
+            }
+
+            .invite-button {
+                display: inline-block;
+                color: white;
+                font-family: "Roboto";
+                font-size: 20px;
+                text-decoration: none;
+                white-space: nowrap;
+                background-color: #f40b3d;
+                border-radius: 5px;
+                padding: 15px 35px;
+                @include center;
+
+                &.highlight {
+                    color: black;
+                    background-color: #ffcd43;
+                }
+            }
+
+            .image {
+                width: calc(35% - 65px);
+                height: auto;
+                padding-left: 65px;
+
+                @media screen and (max-width: 1200px) {
+                    width: 100%;
+                    padding-left: 0px;
+                    margin-top: 65px;
+                }
+
+                &.right {
+                    padding-left: 0px;
+                    padding-right: 65px;
+                }
+            }
+        }
+    }
+}
