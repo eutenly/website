@@ -12,7 +12,6 @@ export default () => {
 
             <div className="bar">
                 <a className="nav-bar-button" href="/invite">Invite</a>
-                <a className="nav-bar-button" href="/features">Features</a>
                 <a className="nav-bar-button" href="/support-server">Support</a>
                 <a className="nav-bar-button" href="/voter-perks">Voter Perks</a>
                 <a className="nav-bar-button" href="/patron-perks">Patron Perks</a>
@@ -34,10 +33,6 @@ export default () => {
                     <a className="menu-menu-button" href="/invite">
                         <img className="button-icon" src="/assets/plus.svg" />
                         <p className="button-text">Invite</p>
-                    </a>
-                    <a className="menu-menu-button" href="/features">
-                        <img className="button-icon" src="/assets/star.svg" />
-                        <p className="button-text">Features</p>
                     </a>
                     <a className="menu-menu-button" href="/support-server">
                         <img className="button-icon" src="/assets/life-ring.svg" />
