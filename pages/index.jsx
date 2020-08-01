@@ -26,6 +26,9 @@ export default () => (
                     <p className="description">Eutenly is a universal search bot for Discord. Search Google, YouTube, Twitter, Reddit, and a ton more services.</p>
                     <p className="description">We integrate with services allowing for rich displays of information, right in Discord.</p>
 
+                    <a className="invite-button" href="/invite">Invite Eutenly</a>
+                    <a className="support-server-button" href="/support-server" target="_blank">Support Server</a>
+
                 </div>
             </div>
 

@@ -32,8 +32,11 @@
         }
 
         .about {
+            display: flex;
             width: 65%;
             height: calc(100vh - 100px);
+            flex-wrap: nowrap;
+            align-items: center;
             background-image: linear-gradient(#9e1e3a, #cc1d43);
 
             clip-path: polygon(0 0, 100% 0, calc(100% - 190px) 100%, 0% 100%);
@@ -57,12 +60,11 @@
                     color: white;
                     font-family: "Roboto Black";
                     font-size: 85px;
-                    margin-top: 135px;
+                    margin-top: auto;
                     margin-bottom: auto;
                     margin-left: 15%;
 
                     @media screen and (max-width: 1200px) {
-                        margin-top: 65px;
                         @include center;
                     }
                 }
@@ -90,6 +92,7 @@
                     margin-left: 15%;
 
                     @media screen and (max-width: 1200px) {
+                        margin: 35px 0px;
                         @include center;
                     }
                 }
@@ -107,6 +110,34 @@
                         display: inline-block;
                         @include center;
                     }
+                }
+
+                .invite-button {
+                    display: inline-block;
+                    color: white;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    background-color: #f34a6f;
+                    border-radius: 5px;
+                    padding: 15px 35px;
+                    margin-top: 65px;
+                    @include center;
+
+                    @media screen and (max-width: 1200px) {
+                        margin-top: 35px;
+                    }
+                }
+
+                .support-server-button {
+                    display: inline-block;
+                    color: white;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-top: 20px;
+                    @include center;
                 }
             }
         }
