@@ -14,7 +14,7 @@ export default () => {
                 <a className="nav-bar-button" href="/invite">Invite</a>
                 <a className="nav-bar-button" href="/support-server">Support</a>
                 <a className="nav-bar-button" href="/voter-perks">Voter Perks</a>
-                <a className="nav-bar-button" href="/patron-perks">Patron Perks</a>
+                <a className="nav-bar-button" href="/patreon">Patron Perks</a>
             </div>
 
             <div className={`menu-button ${menuOpen && "cross"}`} onClick={() => setMenuOpen(!menuOpen)}>
@@ -42,7 +42,7 @@ export default () => {
                         <img className="button-icon" src="/assets/arrow.svg" />
                         <p className="button-text">Voter Perks</p>
                     </a>
-                    <a className="menu-menu-button" href="/patron-perks">
+                    <a className="menu-menu-button" href="/patreon">
                         <img className="button-icon" src="/assets/patreon.svg" />
                         <p className="button-text">Patron Perks</p>
                     </a>
