@@ -1,6 +1,6 @@
 import Head from "../components/Head";
 import NavBar from "../components/NavBar";
-import "./global.scss";
+import "../styles/global.scss";
 
 export default () => (
     <div id="index">

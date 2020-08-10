@@ -13,5 +13,19 @@ module.exports = nextSASS(nextCSS({
     },
     devIndicators: {
         autoPrerender: false
-    }
+    },
+    exportPathMap: async function (
+        defaultPathMap,
+        { dev, dir, outDir, distDir, buildId }
+      ) {
+        return {
+          '/': { page: '/' },
+          '/invite/index.html': { page: '/invite' },
+          '/patreon/index.html': { page: '/patreon' },
+          '/support-server/index.html': { page: '/support-server' },
+          '/twitter/index.html': { page: '/twitter' },
+          '/vote/index.html': { page: '/vote' },
+          '/voter-perks/index.html': { page: '/voter-perks' },
+        }
+      },
 }));

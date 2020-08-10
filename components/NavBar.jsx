@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./navBar.scss";
+import "../styles/navBar.scss";
 
 export default () => {
 
