@@ -1,11 +1,14 @@
-import { useState } from "react";
+import React from "react";
 import "./navBar.scss";
 
-export default () => {
+export default class NavBar extends React.Component {
 
-    const [menuOpen, setMenuOpen] = useState(false);
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
 
-    return (
+    render = () => (
         <div id="nav-bar">
 
             <a className="home-button" href="/"><img src="/assets/logo.svg" /></a>
@@ -17,18 +20,18 @@ export default () => {
                 <a className="nav-bar-button" href="/patreon">Patron Perks</a>
             </div>
 
-            <div className={`menu-button ${menuOpen && "cross"}`} onClick={() => setMenuOpen(!menuOpen)}>
-                <div className={`line-border ${menuOpen && "cross"}`} />
-                <div className={`line line-1 ${menuOpen && "cross"}`} />
-                <div className={`line line-2 ${menuOpen && "cross"}`} />
-                <div className={`line line-3 ${menuOpen && "cross"}`} />
+            <div className={`menu-button ${this.state.menuOpen && "cross"}`} onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}>
+                <div className={`line-border ${this.state.menuOpen && "cross"}`} />
+                <div className={`line line-1 ${this.state.menuOpen && "cross"}`} />
+                <div className={`line line-2 ${this.state.menuOpen && "cross"}`} />
+                <div className={`line line-3 ${this.state.menuOpen && "cross"}`} />
             </div>
 
-            <div className={`menu ${menuOpen && "open"}`}>
+            <div className={`menu ${this.state.menuOpen && "open"}`}>
 
-                <div className={`menu-background ${menuOpen && "open"}`} />
+                <div className={`menu-background ${this.state.menuOpen && "open"}`} />
 
-                <div className={`menu-content ${menuOpen && "open"}`}>
+                <div className={`menu-content ${this.state.menuOpen && "open"}`}>
 
                     <a className="menu-menu-button" href="/invite">
                         <img className="button-icon" src="/assets/plus.svg" />
