@@ -43,7 +43,7 @@ export default () => {
 
                             <div className="name">
                                 <div className="divider" />
-                                <img className="icon" src="/assets/search.svg" />
+                                <img className="icon" src="/assets/search.svg" alt="Search icon" />
                                 <p className="text">Search The Internet</p>
                                 <div className="divider" />
                             </div>
@@ -59,7 +59,7 @@ export default () => {
 
                             <div className="name">
                                 <div className="divider" />
-                                <img className="icon" src="/assets/youtube.svg" />
+                                <img className="icon" src="/assets/youtube.svg" alt="YouTube logo" />
                                 <p className="text">YouTube Search</p>
                                 <div className="divider" />
                             </div>
@@ -75,7 +75,7 @@ export default () => {
 
                             <div className="name">
                                 <div className="divider" />
-                                <img className="icon" src="/assets/twitter.svg" />
+                                <img className="icon" src="/assets/twitter.svg" alt="Twitter logo" />
                                 <p className="text">Twitter Search</p>
                                 <div className="divider" />
                             </div>
@@ -107,7 +107,7 @@ export default () => {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/search.svg" />
+                            <img className="icon" src="/assets/search.svg" alt="Search icon" />
                             <p className="text">Search The Internet</p>
                             <div className="divider" />
                         </div>
@@ -130,7 +130,7 @@ export default () => {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/youtube.svg" />
+                            <img className="icon" src="/assets/youtube.svg" alt="YouTube logo" />
                             <p className="text">YouTube Search</p>
                             <div className="divider" />
                         </div>
@@ -153,7 +153,7 @@ export default () => {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/twitter.svg" />
+                            <img className="icon" src="/assets/twitter.svg" alt="Twitter logo" />
                             <p className="text">Twitter Search</p>
                             <div className="divider" />
                         </div>
@@ -176,7 +176,7 @@ export default () => {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/reddit.svg" />
+                            <img className="icon" src="/assets/reddit.svg" alt="Reddit logo" />
                             <p className="text">Reddit Search</p>
                             <div className="divider" />
                         </div>
@@ -199,7 +199,7 @@ export default () => {
 
                         <div className="name">
                             <div className="divider left highlight" />
-                            <img className="icon" src="/assets/link.svg" />
+                            <img className="icon" src="/assets/link.svg" alt="Link icon" />
                             <p className="text highlight">Saved Links</p>
                             <div className="divider highlight" />
                         </div>
@@ -221,7 +221,7 @@ export default () => {
 
                         <div className="name">
                             <div className="divider" />
-                            <img className="icon margin" src="/assets/plus.svg" />
+                            <img className="icon margin" src="/assets/plus.svg" alt="Plus icon" />
                             <p className="text">More Features</p>
                             <div className="divider" />
                         </div>

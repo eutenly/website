@@ -43,7 +43,7 @@ export default class VoterPerks extends React.Component {
 
                             <div className="name">
                                 <div className="divider" />
-                                <img className="icon" src="/assets/search.svg" />
+                                <img className="icon" src="/assets/search.svg" alt="Search icon" />
                                 <p className="text">Search Rich Panels</p>
                                 <div className="divider" />
                             </div>
@@ -59,7 +59,7 @@ export default class VoterPerks extends React.Component {
 
                             <div className="name">
                                 <div className="divider" />
-                                <img className="icon" src="/assets/twitter.svg" />
+                                <img className="icon" src="/assets/twitter.svg" alt="Twitter logo" />
                                 <p className="text">Twitter Feeds &amp; Actions</p>
                                 <div className="divider" />
                             </div>
@@ -75,7 +75,7 @@ export default class VoterPerks extends React.Component {
 
                             <div className="name">
                                 <div className="divider" />
-                                <img className="icon" src="/assets/reddit.svg" />
+                                <img className="icon" src="/assets/reddit.svg" alt="Reddit logo" />
                                 <p className="text">Reddit Actions</p>
                                 <div className="divider" />
                             </div>
@@ -107,7 +107,7 @@ export default class VoterPerks extends React.Component {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/search.svg" />
+                            <img className="icon" src="/assets/search.svg" alt="Search icon" />
                             <p className="text">Search Rich Panels</p>
                             <div className="divider" />
                         </div>
@@ -130,7 +130,7 @@ export default class VoterPerks extends React.Component {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/twitter.svg" />
+                            <img className="icon" src="/assets/twitter.svg" alt="Twitter logo" />
                             <p className="text">Twitter Feeds &amp; Actions</p>
                             <div className="divider" />
                         </div>
@@ -153,7 +153,7 @@ export default class VoterPerks extends React.Component {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/reddit.svg" />
+                            <img className="icon" src="/assets/reddit.svg" alt="Reddit logo" />
                             <p className="text">Reddit Actions</p>
                             <div className="divider" />
                         </div>
@@ -176,7 +176,7 @@ export default class VoterPerks extends React.Component {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/link.svg" />
+                            <img className="icon" src="/assets/link.svg" alt="Link icon" />
                             <p className="text">More Saved Links</p>
                             <div className="divider" />
                         </div>
@@ -199,7 +199,7 @@ export default class VoterPerks extends React.Component {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/spotify.svg" />
+                            <img className="icon" src="/assets/spotify.svg" alt="Spotify logo" />
                             <p className="text">Modify Spotify Playlists</p>
                             <div className="divider" />
                         </div>
