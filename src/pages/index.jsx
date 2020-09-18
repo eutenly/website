@@ -1,11 +1,10 @@
 import React from "react";
 import Head from "../components/Head";
 import NavBar from "../components/NavBar";
-import "./global.scss";
+import "../styles/global.scss";
 
-export default class Index extends React.Component {
-
-    render = () => (
+export default () => {
+        return (
         <div id="index">
 
             <Head
@@ -246,5 +245,4 @@ export default class Index extends React.Component {
 
         </div>
     );
-
 };
