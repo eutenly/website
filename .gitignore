@@ -6,3 +6,5 @@ node_modules/
 
 # Next.JS
 .next
+
+build/
