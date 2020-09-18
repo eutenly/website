@@ -105,20 +105,20 @@ export default () => (
 
                     <div className="name">
                         <div className="divider left" />
-                        {/* <img className="icon" src="/assets/google.svg" /> */}
+                        {/* <img className="icon" src="/assets/search.svg" /> */}
                         <p className="text">Content Delivery</p>
                         <div className="divider" />
                     </div>
 
                     <p className="description">With Eutenly Partner Programme, our users will be able to access your site's content right from Discord.</p>
-                    <p className="description">Eutenly supports rich content such as knowledge panels, videos, images, and much more. We'll do what we can to make your site's experience fluid on Discord.</p>
+                    <p className="description">Eutenly supports rich content such as rich panels, videos, images, and much more. We'll do what we can to make your site's experience fluid on Discord.</p>
 
                     <p className="ready-text">Ready to join Eutenly Partners?</p>
-                    <a className="button"  href="mailto:partners@eutenly.com">Contact Us</a>
+                    <a className="button" href="mailto:partners@eutenly.com">Contact Us</a>
 
                 </div>
 
-                <img className="image" src="/assets/google-command.png" alt="An example of the Google command's result" />
+                <img className="image" src="/assets/search-command.png" alt="An example of the Search command's result" />
 
             </div>
 
@@ -137,7 +137,7 @@ export default () => (
                     <p className="description">You can allow Eutenly users to login with your site/app and start engaging with your site's content in moments.</p>
 
                     <p className="ready-text">Ready to join Eutenly Partners?</p>
-                    <a className="button"  href="mailto:partners@eutenly.com">Contact Us</a>
+                    <a className="button" href="mailto:partners@eutenly.com">Contact Us</a>
 
                 </div>
 
@@ -160,7 +160,7 @@ export default () => (
                     <p className="description">Users who enjoy your content through Eutenly are much more likely to go onto making a full account on your site.</p>
 
                     <p className="ready-text">Ready to join Eutenly Partners?</p>
-                    <a className="button"  href="mailto:partners@eutenly.com">Contact Us</a>
+                    <a className="button" href="mailto:partners@eutenly.com">Contact Us</a>
 
                 </div>
 
@@ -180,7 +180,7 @@ export default () => (
 
                     <p className="description">Contact us so we can discuss how we can make Eutenly work for you.</p>
 
-                    <a className="button"  href="mailto:partners@eutenly.com">Contact Us</a>
+                    <a className="button" href="mailto:partners@eutenly.com">Contact Us</a>
 
                 </div>
             </div>
