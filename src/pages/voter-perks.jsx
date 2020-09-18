@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "../components/Head";
 import NavBar from "../components/NavBar";
 import "../styles/global.scss";

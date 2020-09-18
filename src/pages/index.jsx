@@ -1,8 +1,10 @@
+import React from "react";
 import Head from "../components/Head";
 import NavBar from "../components/NavBar";
 import "../styles/global.scss";
 
-export default () => (
+export default () => {
+        return (
     <div id="index">
 
         <Head
@@ -242,4 +244,4 @@ export default () => (
         </div>
 
     </div>
-);
+    )}
