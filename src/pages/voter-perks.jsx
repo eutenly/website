@@ -43,8 +43,8 @@ export default class VoterPerks extends React.Component {
 
                             <div className="name">
                                 <div className="divider" />
-                                <img className="icon" src="/assets/google.svg" />
-                                <p className="text">Google Knowledge Panels</p>
+                                <img className="icon" src="/assets/search.svg" />
+                                <p className="text">Search Rich Panels</p>
                                 <div className="divider" />
                             </div>
 
@@ -107,20 +107,20 @@ export default class VoterPerks extends React.Component {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/google.svg" />
-                            <p className="text">Google Knowledge Panels</p>
+                            <img className="icon" src="/assets/search.svg" />
+                            <p className="text">Search Rich Panels</p>
                             <div className="divider" />
                         </div>
 
-                        <p className="description">Google Knowledge Panels allow you to view a lot of information in a single embed about key things like people, music, companies, and more.</p>
-                        <p className="description">Knowledge Panels include people's social profiles, companies' products, music producers' albums, and music's lyrics</p>
+                        <p className="description">Search Rich Panels allow you to view a lot of information in a single embed about key things like people, music, companies, and more.</p>
+                        <p className="description">Rich Panels include people's social profiles, companies' products, music producers' albums, and music's lyrics</p>
 
                         <p className="ready-text">Ready to vote?</p>
                         <a className="button" href="/vote" target="_blank">Vote</a>
 
                     </div>
 
-                    <img className="image" src="/assets/google-command.png" alt="An example of the Google command's result" />
+                    <img className="image" src="/assets/search-command.png" alt="An example of the Search command's result" />
 
                 </div>
 
@@ -166,7 +166,7 @@ export default class VoterPerks extends React.Component {
 
                     </div>
 
-                    <img className="image" src="/assets/google-command.png" alt="An example of the Google command's result" />
+                    <img className="image" src="/assets/search-command.png" alt="An example of the Search command's result" />
 
                 </div>
 

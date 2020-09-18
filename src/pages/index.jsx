@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 import "../styles/global.scss";
 
 export default () => {
-        return (
+    return (
         <div id="index">
 
             <Head
@@ -25,7 +25,7 @@ export default () => {
 
                         <div className="divider" />
 
-                        <p className="description">Eutenly is a universal search bot for Discord. Search Google, YouTube, Twitter, Reddit, and a ton more services.</p>
+                        <p className="description">Eutenly is a universal search bot for Discord. Search the internet, YouTube, Twitter, Reddit, and a ton more services.</p>
                         <p className="description">We integrate with services allowing for rich displays of information, right in Discord.</p>
 
                         <a className="button" href="/invite">Invite Eutenly</a>
@@ -37,14 +37,14 @@ export default () => {
                 <div className="intro-features-wrapper">
                     <div className="intro-features">
 
-                        <p className="title">Search the Internet</p>
+                        <p className="title">Search The Internet</p>
 
                         <div className="intro-feature">
 
                             <div className="name">
                                 <div className="divider" />
-                                <img className="icon" src="/assets/google.svg" />
-                                <p className="text">Google Search</p>
+                                <img className="icon" src="/assets/search.svg" />
+                                <p className="text">Search The Internet</p>
                                 <div className="divider" />
                             </div>
 
@@ -107,20 +107,20 @@ export default () => {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/google.svg" />
-                            <p className="text">Google Search</p>
+                            <img className="icon" src="/assets/search.svg" />
+                            <p className="text">Search The Internet</p>
                             <div className="divider" />
                         </div>
 
-                        <p className="description">Search Google right from Discord with Eutenly's Google Command. Search results are embedded in an organized and elegant way, making it easy to view information. From there, you can easily get more info about any result.</p>
-                        <p className="description">Eutenly even supports knowledge panels, song and artist info, lyrics, related questions, and a whole lot more.</p>
+                        <p className="description">Search the internet right from Discord with Eutenly's Search Command. Search results are embedded in an organized and elegant way, making it easy to view information. From there, you can easily get more info about any result.</p>
+                        <p className="description">Eutenly also supports rich panels, song and artist info, lyrics, related questions, and a whole lot more.</p>
 
                         <p className="ready-text">Ready to try it?</p>
                         <a className="button" href="/invite">Invite Eutenly</a>
 
                     </div>
 
-                    <img className="image" src="/assets/google-command.png" alt="An example of the Google command's result" />
+                    <img className="image" src="/assets/search-command.png" alt="An example of the Search command's result" />
 
                 </div>
 
@@ -226,13 +226,13 @@ export default () => {
                             <div className="divider" />
                         </div>
 
-                        <p className="description">Aside from Google, YouTube, Twitter, and Reddit search, Eutenly also has the following features:</p>
+                        <p className="description">Aside from Search, YouTube, Twitter, and Reddit integration, Eutenly also has the following features:</p>
 
                         <ul className="more-features">
                             <li>Medium Search</li>
-                            <li>Steam Search</li>
-                            <li>Top.GG Search</li>
-                            <li>Domain Name Search</li>
+                            <li>Steam Search (Coming Soon)</li>
+                            <li>Top.GG Search (Coming Soon)</li>
+                            <li>Domain Name Search (Coming Soon)</li>
                         </ul>
 
                         <p className="ready-text">Ready to try it?</p>
