@@ -1,13 +1,13 @@
 import React from "react";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 export default function Head(props) {
-    let redirectScript = []
+    let redirectScript = [];
     if (props.redirect) {
-        redirectScript = [{ 
-            type: 'text/javascript', 
+        redirectScript = [{
+            type: "text/javascript",
             innerHTML: `window.location = "${props.redirect}"`
-        }]
+        }];
     }
     return (
         <Helmet script={redirectScript}>
