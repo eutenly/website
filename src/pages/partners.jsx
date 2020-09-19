@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "../components/Head";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import "../styles/global.scss";
 
 export default () => (
@@ -173,7 +174,7 @@ export default () => (
 
                     <div className="name">
                         <div className="divider" />
-                        <img className="icon margin" src="/assets/plus.svg" />
+                        <img className="icon margin" src="/assets/plus.svg" alt="Plus icon" />
                         <p className="text">Join Eutenly Partners</p>
                         <div className="divider" />
                     </div>
@@ -186,6 +187,8 @@ export default () => (
             </div>
 
         </div>
+
+        <Footer />
 
     </div>
 );

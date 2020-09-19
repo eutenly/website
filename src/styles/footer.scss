@@ -1,0 +1,49 @@
+@import "../global";
+
+#footer {
+    background-color: #ffffff10;
+    padding: 35px 0px;
+    margin-top: 100px;
+
+    .home-button img {
+        width: 225px;
+        height: auto;
+        @include center;
+    }
+
+    .copyright {
+        display: inline-block;
+        color: white;
+        font-family: "Roboto";
+        font-size: 15px;
+        @include center;
+
+        a {
+            color: #f40b3d;
+        }
+    }
+
+    .links {
+        display: inline-block;
+        color: white;
+        font-family: "Roboto";
+        font-size: 15px;
+        margin: auto;
+        margin-top: 10px;
+        @include center;
+
+        a {
+            color: #f40b3d;
+            text-decoration: none;
+        }
+    }
+
+    .affiliation {
+        display: inline-block;
+        color: white;
+        font-family: "Roboto";
+        font-size: 15px;
+        margin-top: 5px;
+        @include center;
+    }
+}

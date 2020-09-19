@@ -12,7 +12,7 @@ export default class NavBar extends React.Component {
     render = () => (
         <div id="nav-bar">
 
-            <Link className="home-button" to="/"><img src="/assets/logo.svg" /></Link>
+            <Link className="home-button" to="/"><img src="/assets/logo.svg" alt="Eutenly logo" /></Link>
 
             <div className="bar">
                 <Link className="nav-bar-button" to="/invite">Invite</Link>
@@ -35,19 +35,19 @@ export default class NavBar extends React.Component {
                 <div className={`menu-content ${this.state.menuOpen && "open"}`}>
 
                     <Link className="menu-menu-button" to="/invite">
-                        <img className="button-icon" src="/assets/plus.svg" />
+                        <img className="button-icon" src="/assets/plus.svg" alt="Plus icon" />
                         <p className="button-text">Invite</p>
                     </Link>
                     <Link className="menu-menu-button" to="/support-server">
-                        <img className="button-icon" src="/assets/life-ring.svg" />
+                        <img className="button-icon" src="/assets/life-ring.svg" alt="Life ring icon" />
                         <p className="button-text">Support</p>
                     </Link>
                     <Link className="menu-menu-button" to="/voter-perks">
-                        <img className="button-icon" src="/assets/arrow.svg" />
+                        <img className="button-icon" src="/assets/arrow.svg" alt="Up arrow icon" />
                         <p className="button-text">Voter Perks</p>
                     </Link>
                     <Link className="menu-menu-button" to="/patreon">
-                        <img className="button-icon" src="/assets/patreon.svg" />
+                        <img className="button-icon" src="/assets/patreon.svg" alt="Patron logo" />
                         <p className="button-text">Patron Perks</p>
                     </Link>
 
