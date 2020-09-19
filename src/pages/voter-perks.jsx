@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "../components/Head";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import "../styles/global.scss";
 
 export default class VoterPerks extends React.Component {
@@ -217,6 +218,8 @@ export default class VoterPerks extends React.Component {
                 </div>
 
             </div>
+
+            <Footer />
 
         </div>
     );
