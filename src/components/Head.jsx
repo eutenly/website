@@ -16,7 +16,7 @@ export default function Head(props) {
             <link rel="manifest" href="/manifest.json" />
 
             {/* Embed base */}
-            <meta content='/assets/logo.png' property='og:image' />
+            <meta content="/assets/logo.png" property="og:image" />
             <meta content="Eutenly" property="og:site_name"/>
             <meta content="#f40b3d" name="theme-color" />
 
