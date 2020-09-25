@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 import "../styles/footer.scss";
 
 export default class Footer extends React.Component {

@@ -10,7 +10,7 @@ export default () => {
 
             <Head
                 title="Eutenly"
-                description="Discord's internet bot"
+                description="Eutenly is a universal search bot for Discord. Search the internet, YouTube, Twitter, Reddit, and a ton more services. We integrate with services allowing for rich displays of information, right in Discord."
             />
             <NavBar />
 
