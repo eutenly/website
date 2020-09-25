@@ -2,6 +2,7 @@ import React from "react";
 import Head from "../components/Head";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { Link } from "gatsby";
 import "../styles/global.scss";
 
 export default () => {
@@ -29,8 +30,8 @@ export default () => {
                         <p className="description">Eutenly is a universal search bot for Discord. Search the internet, YouTube, Twitter, Reddit, and a ton more services.</p>
                         <p className="description">We integrate with services allowing for rich displays of information, right in Discord.</p>
 
-                        <a className="button" href="/invite">Invite Eutenly</a>
-                        <a className="button-2" href="/support-server" target="_blank">Support Server</a>
+                        <Link className="button" to="/invite">Invite Eutenly</Link>
+                        <Link className="button-2" to="/support-server" target="_blank">Support Server</Link>
 
                     </div>
                 </div>
@@ -117,7 +118,7 @@ export default () => {
                         <p className="description">Eutenly also supports rich panels, song and artist info, lyrics, related questions, and a whole lot more.</p>
 
                         <p className="ready-text">Ready to try it?</p>
-                        <a className="button" href="/invite">Invite Eutenly</a>
+                        <Link className="button" to="/invite">Invite Eutenly</Link>
 
                     </div>
 
@@ -140,7 +141,7 @@ export default () => {
                         <p className="description">View details about video view counts, like and dislike counts, amounts of comments, video lengths, channel subscriber counts, and more.</p>
 
                         <p className="ready-text">Ready to try it?</p>
-                        <a className="button" href="/invite">Invite Eutenly</a>
+                        <Link className="button" to="/invite">Invite Eutenly</Link>
 
                     </div>
 
@@ -163,7 +164,7 @@ export default () => {
                         <p className="description">Explore Twitter however you'd like. Maybe start with a search, view a tweet, check the replies, go to someone's profile, etc.</p>
 
                         <p className="ready-text">Ready to try it?</p>
-                        <a className="button" href="/invite">Invite Eutenly</a>
+                        <Link className="button" to="/invite">Invite Eutenly</Link>
 
                     </div>
 
@@ -186,7 +187,7 @@ export default () => {
                         <p className="description">Browse content the way you want. The Reddit command is continuous in a way that you can view a post's replies, visit someone's profile, view their posts, etc.</p>
 
                         <p className="ready-text">Ready to try it?</p>
-                        <a className="button" href="/invite">Invite Eutenly</a>
+                        <Link className="button" to="/invite">Invite Eutenly</Link>
 
                     </div>
 
@@ -209,7 +210,7 @@ export default () => {
                         <p className="description">Saved links can be accessed whenever you'd like, and are displayed in neatly organized pages for easy viewing.</p>
 
                         <p className="ready-text highlight">Ready to try it?</p>
-                        <a className="button highlight" href="/invite">Invite Eutenly</a>
+                        <Link className="button highlight" to="/invite">Invite Eutenly</Link>
 
                     </div>
 
@@ -237,7 +238,7 @@ export default () => {
                         </ul>
 
                         <p className="ready-text">Ready to try it?</p>
-                        <a className="button" href="/invite">Invite Eutenly</a>
+                        <Link className="button" to="/invite">Invite Eutenly</Link>
 
                     </div>
                 </div>
