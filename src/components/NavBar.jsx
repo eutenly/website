@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 import "../styles/navBar.scss";
 
 export default class NavBar extends React.Component {
@@ -18,7 +18,7 @@ export default class NavBar extends React.Component {
                 <Link className="nav-bar-button" to="/invite">Invite</Link>
                 <Link className="nav-bar-button" to="/support-server">Support</Link>
                 <Link className="nav-bar-button" to="/voter-perks">Voter Perks</Link>
-                <Link className="nav-bar-button" to="/patreon">Patron Perks</Link>
+                {/* <Link className="nav-bar-button" to="/patreon">Patron Perks</Link> */}
             </div>
 
             <div className={`menu-button ${this.state.menuOpen && "cross"}`} onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}>
