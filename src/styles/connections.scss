@@ -1,0 +1,97 @@
+@import "../_global";
+
+#connections {
+    .banner {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        top: 55px;
+        left: 0px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #491c26bb;
+        backdrop-filter: blur(4px);
+        padding: 15px 0px;
+        z-index: 99;
+
+        .banner-text {
+            display: inline-block;
+            color: white;
+            font-family: "Roboto";
+            font-size: 20px;
+            margin: 0px;
+        }
+
+        .close-button {
+            display: inline-block;
+            color: white;
+            font-family: "Roboto";
+            font-size: 20px;
+            background-color: #f40b3d;
+            border-radius: 50%;
+            padding: 0px 10px 5px 10px;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .title {
+        display: inline-block;
+        color: white;
+        font-family: "Roboto Black";
+        font-size: 50px;
+        margin: auto;
+        margin-top: 135px;
+        @include center;
+
+        &.less-margin {
+            margin-top: 165px;
+        }
+    }
+
+    .info {
+        display: inline-block;
+        color: white;
+        font-family: "Roboto";
+        font-size: 20px;
+        text-align: center;
+        @include center;
+    }
+
+    .divider {
+        width: 80%;
+        height: 2px;
+        background-color: #ffffff50;
+        margin: 65px 0px;
+        @include center;
+    }
+
+    .connections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .error {
+        width: 80%;
+        color: white;
+        font-family: "Roboto";
+        font-size: 18px;
+        text-align: center;
+        @include center;
+
+        button {
+            color: #f40b3d;
+            font-family: "Roboto";
+            font-size: 18px;
+            text-decoration: underline;
+            padding: 0px;
+            cursor: pointer;
+        }
+
+        a, span {
+            color: #f40b3d;
+        }
+    }
+}
