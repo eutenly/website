@@ -51,10 +51,10 @@ export default class NavBar extends React.Component {
                         <img className="button-icon" src="/assets/arrow.svg" alt="Up arrow icon" />
                         <p className="button-text">Voter Perks</p>
                     </Link>
-                    <Link className="menu-menu-button" to="/patreon">
+                    {/* <Link className="menu-menu-button" to="/patreon">
                         <img className="button-icon" src="/assets/patreon.svg" alt="Patron logo" />
                         <p className="button-text">Patron Perks</p>
-                    </Link>
+                    </Link> */}
 
                     <div className="line" />
 
