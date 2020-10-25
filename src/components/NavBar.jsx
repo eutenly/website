@@ -16,6 +16,7 @@ export default class NavBar extends React.Component {
 
             <div className="bar">
                 <Link className="nav-bar-button" to="/invite">Invite</Link>
+                <Link className="nav-bar-button" to="/connections">Connections</Link>
                 <Link className="nav-bar-button" to="/support-server">Support</Link>
                 <Link className="nav-bar-button" to="/voter-perks">Voter Perks</Link>
                 {/* <Link className="nav-bar-button" to="/patreon">Patron Perks</Link> */}
@@ -37,6 +38,10 @@ export default class NavBar extends React.Component {
                     <Link className="menu-menu-button" to="/invite">
                         <img className="button-icon" src="/assets/plus.svg" alt="Plus icon" />
                         <p className="button-text">Invite</p>
+                    </Link>
+                    <Link className="menu-menu-button" to="/connections">
+                        <img className="button-icon" src="/assets/link.svg" alt="Link icon" />
+                        <p className="button-text">Connections</p>
                     </Link>
                     <Link className="menu-menu-button" to="/support-server">
                         <img className="button-icon" src="/assets/life-ring.svg" alt="Life ring icon" />
