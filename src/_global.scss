@@ -27,6 +27,13 @@ body {
     margin: 0px;
 }
 
+//Buttons
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
 //Scrollbar
 ::-webkit-scrollbar {
     width: 5px;
