@@ -69,15 +69,16 @@ export default class Connections extends React.Component {
         this.getConnections();
 
         // Get added connection
+        const addedConnectionCookie = document.cookie.split(";").find(c => c.trim().startsWith("authed_with"));
         const addedConnection = {
             twitter: "Twitter",
             spotify: "Spotify",
             reddit: "Reddit",
             github: "GitHub"
-        }[sessionStorage.getItem("addedConnection")];
+        }[addedConnectionCookie && addedConnectionCookie.split("=")[1]];
 
         // Remove added connection
-        sessionStorage.removeItem("addedConnection");
+        document.cookie = "authed_with=; expires=Thu, 01 Jan 1970 00:00:00 GMT"
 
         // Set state
         this.setState({ addedConnection });
