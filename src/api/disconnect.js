@@ -4,7 +4,7 @@ import endpoint from "./endpoint";
 export default async function disconnect(connection) {
 
     // Fetch
-    return await axios.post(endpoint("disconnect"), {
+    return await axios.delete(endpoint("api/v1/connection"), {
         connection
     });
 }
