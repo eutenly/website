@@ -12,7 +12,7 @@ export default class NavBar extends React.Component {
     render = () => (
         <div id="nav-bar">
 
-            <Link className="home-button" to="/"><img src="/assets/logo.svg" alt="Eutenly logo" /></Link>
+            <Link className="home-button" to="/"><img src="/assets/logo-white.svg" alt="Eutenly logo" /></Link>
 
             <div className="bar">
                 <Link className="nav-bar-button" to="/invite">Invite</Link>
