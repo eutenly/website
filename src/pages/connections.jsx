@@ -33,10 +33,10 @@ export default class Connections extends React.Component {
                 />
             )}
 
-            {this.state.addedConnection && (
+            {this.state.bannerText && (
                 <div className="banner">
-                    <p className="banner-text">Successfully connected to {this.state.addedConnection}</p>
-                    <button className="close-button" onClick={() => this.setState({ addedConnection: null })}>x</button>
+                    {this.state.bannerText}
+                    <button className="close-button" onClick={() => this.setState({ addedConnectionName: null, addedConnection: null, authenticationError: null })}>x</button>
                 </div>
             )}
 
@@ -70,18 +70,37 @@ export default class Connections extends React.Component {
 
         // Get added connection
         const addedConnectionCookie = document.cookie.split(";").find(c => c.trim().startsWith("authed_with"));
+        const addedConnectionName = addedConnectionCookie && addedConnectionCookie.split("=")[1];
         const addedConnection = {
             twitter: "Twitter",
             spotify: "Spotify",
             reddit: "Reddit",
             github: "GitHub"
-        }[addedConnectionCookie && addedConnectionCookie.split("=")[1]];
+        }[addedConnectionName];
 
-        // Remove added connection
-        document.cookie = "authed_with=; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+        // Remove added connection cookie
+        document.cookie = "authed_with=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+
+        // Get authentication error
+        const authenticationErrorCookie = document.cookie.split(";").find(c => c.trim().startsWith("auth_error"));
+        const authenticationError = authenticationErrorCookie && authenticationErrorCookie.split("=")[1];
+
+        // Remove authentication error cookie
+        document.cookie = "auth_error=; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+
+        /**
+         * Ignore Access Denied Errors
+         *
+         * This error is caused when the user decides not to authorize the app
+         * Since the user has done this intentionally, don't display it
+         */
+        if (authenticationError === "access_denied") return;
 
         // Set state
-        this.setState({ addedConnection });
+        if ((addedConnection) && (!authenticationError)) this.setState({ bannerText: <p className="banner-text">Successfully connected to {addedConnection}</p> });
+        else if (authenticationError === "server_error") this.setState({ bannerText: <p className="banner-text">There was an unexpected error connecting to {addedConnection}. Please <a href={`/login/${addedConnectionName}`}>try again</a></p> });
+        else if (authenticationError === "temporarily_unavailable") this.setState({ bannerText: <p className="banner-text">There was an unexpected error connecting to {addedConnection}. Please wait a few minutes and then <a href={`/login/${addedConnectionName}`}>try again</a></p> });
+        else if (authenticationError) this.setState({ bannerText: <p className="banner-text">There was an unexpected error connecting to {addedConnection}. Please join our <a href="/support-server">support server</a>, mention the <span>@Eutenlords</span> role, and send them a screenshot of this page. Error code <span>{authenticationError}</span></p> });
     };
 
     getConnections = () => {
