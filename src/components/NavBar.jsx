@@ -12,10 +12,11 @@ export default class NavBar extends React.Component {
     render = () => (
         <div id="nav-bar">
 
-            <Link className="home-button" to="/"><img src="/assets/logo.svg" alt="Eutenly logo" /></Link>
+            <Link className="home-button" to="/"><img src="/assets/logo-white.svg" alt="Eutenly logo" /></Link>
 
             <div className="bar">
                 <Link className="nav-bar-button" to="/invite">Invite</Link>
+                <Link className="nav-bar-button" to="/connections">Connections</Link>
                 <Link className="nav-bar-button" to="/support-server">Support</Link>
                 <Link className="nav-bar-button" to="/voter-perks">Voter Perks</Link>
                 {/* <Link className="nav-bar-button" to="/patreon">Patron Perks</Link> */}
@@ -38,6 +39,10 @@ export default class NavBar extends React.Component {
                         <img className="button-icon" src="/assets/plus.svg" alt="Plus icon" />
                         <p className="button-text">Invite</p>
                     </Link>
+                    <Link className="menu-menu-button" to="/connections">
+                        <img className="button-icon" src="/assets/link.svg" alt="Link icon" />
+                        <p className="button-text">Connections</p>
+                    </Link>
                     <Link className="menu-menu-button" to="/support-server">
                         <img className="button-icon" src="/assets/life-ring.svg" alt="Life ring icon" />
                         <p className="button-text">Support</p>
@@ -46,10 +51,10 @@ export default class NavBar extends React.Component {
                         <img className="button-icon" src="/assets/arrow.svg" alt="Up arrow icon" />
                         <p className="button-text">Voter Perks</p>
                     </Link>
-                    <Link className="menu-menu-button" to="/patreon">
+                    {/* <Link className="menu-menu-button" to="/patreon">
                         <img className="button-icon" src="/assets/patreon.svg" alt="Patron logo" />
                         <p className="button-text">Patron Perks</p>
-                    </Link>
+                    </Link> */}
 
                     <div className="line" />
 
