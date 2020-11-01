@@ -5,8 +5,8 @@ export default async function getConnections() {
 
     // Fetch
     return await axios({
-        method: 'get',
-        url: endpoint('me'),
+        method: "get",
+        url: endpoint("me"),
         validateStatus: status => status < 500
     });
 }
