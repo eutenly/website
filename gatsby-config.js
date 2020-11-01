@@ -5,6 +5,7 @@ module.exports = {
 		{
 			resolve: "gatsby-plugin-exclude",
 			options: { paths: [ "/patreon", "/partners" ] }
-		}
+		},
+		"gatsby-plugin-remove-trailing-slashes"
 	]
 };
