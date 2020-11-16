@@ -17,7 +17,7 @@ export default function Head(props) {
 
             {/* Embed base */}
             <meta content="/assets/logo.png" property="og:image" />
-            <meta content="Eutenly" property="og:site_name"/>
+            <meta content="Eutenly" property="og:site_name" />
             <meta content="#f40b3d" name="theme-color" />
 
             {/* Page info */}
@@ -25,6 +25,7 @@ export default function Head(props) {
             <meta name="description" content={props.description} />
             <meta name="og:title" content={props.title} />
             <meta name="og:description" content={props.description} />
+            <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1" />
         </Helmet>
     );
 }

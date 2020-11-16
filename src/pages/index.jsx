@@ -62,7 +62,7 @@ export default () => {
                             <div className="name">
                                 <div className="divider" />
                                 <img className="icon" src="/assets/youtube.svg" alt="YouTube logo" />
-                                <p className="text">YouTube Search</p>
+                                <p className="text">YouTube Integration</p>
                                 <div className="divider" />
                             </div>
 
@@ -78,7 +78,7 @@ export default () => {
                             <div className="name">
                                 <div className="divider" />
                                 <img className="icon" src="/assets/twitter.svg" alt="Twitter logo" />
-                                <p className="text">Twitter Search</p>
+                                <p className="text">Twitter Integration</p>
                                 <div className="divider" />
                             </div>
 
@@ -133,7 +133,7 @@ export default () => {
                         <div className="name">
                             <div className="divider left" />
                             <img className="icon" src="/assets/youtube.svg" alt="YouTube logo" />
-                            <p className="text">YouTube Search</p>
+                            <p className="text">YouTube Integration</p>
                             <div className="divider" />
                         </div>
 
@@ -156,12 +156,12 @@ export default () => {
                         <div className="name">
                             <div className="divider left" />
                             <img className="icon" src="/assets/twitter.svg" alt="Twitter logo" />
-                            <p className="text">Twitter Search</p>
+                            <p className="text">Twitter Integration</p>
                             <div className="divider" />
                         </div>
 
-                        <p className="description">Search Twitter to view tweets, profiles, and hashtags. Eutenly gets data straight from Twitter to display up-to-date information right in Discord.</p>
-                        <p className="description">Explore Twitter however you'd like. Maybe start with a search, view a tweet, check the replies, go to someone's profile, etc.</p>
+                        <p className="description">Search Twitter to view tweets, profiles, and more. Eutenly gets data straight from Twitter to display up-to-date information right in Discord.</p>
+                        <p className="description">Explore Twitter however you'd like. Not only can you view Tweets from specific people, but Eutenly also lets you view your timeline. You can even like and retweet Tweets while browsing.</p>
 
                         <p className="ready-text">Ready to try it?</p>
                         <Link className="button" to="/invite">Invite Eutenly</Link>
@@ -178,24 +178,47 @@ export default () => {
 
                         <div className="name">
                             <div className="divider left" />
-                            <img className="icon" src="/assets/reddit.svg" alt="Reddit logo" />
-                            <p className="text">Reddit Search</p>
+                            <img className="icon" src="/assets/spotify.svg" alt="Spotify logo" />
+                            <p className="text">Spotify Integration</p>
                             <div className="divider" />
                         </div>
 
-                        <p className="description">The Reddit Command lets you search for subreddits, posts, and users right from Discord. Eutenly embeds search results in a neat list for you to explore.</p>
-                        <p className="description">Browse content the way you want. The Reddit command is continuous in a way that you can view a post's replies, visit someone's profile, view their posts, etc.</p>
+                        <p className="description">The Spotify Command lets you search for tracks, artists, albums, and more. You can even view your personal top tracks and artists, as well as your listening history.</p>
+                        <p className="description">Eutenly's Spotify integration even lets you play, pause, and skip tracks, right from Discord. You can also share what you're currently listening to with the <code>e;spotify current</code> command. Found a song you like? Queue it up or save it to your library right from Discord.</p>
 
                         <p className="ready-text">Ready to try it?</p>
                         <Link className="button" to="/invite">Invite Eutenly</Link>
 
                     </div>
 
-                    <img className="image right" src="/assets/reddit-command.png" alt="An example of the Reddit command's result" />
+                    <img className="image right" src="/assets/spotify-command.png" alt="An example of the Spotify command's result" />
 
                 </div>
 
                 <div className="feature">
+
+                    <div className="content">
+
+                        <div className="name">
+                            <div className="divider left" />
+                            <img className="icon" src="/assets/reddit.svg" alt="Reddit logo" />
+                            <p className="text">Reddit Integration</p>
+                            <div className="divider" />
+                        </div>
+
+                        <p className="description">The Reddit Command lets you search for subreddits, posts, and users right from Discord. Eutenly embeds search results in a neat list for you to explore.</p>
+                        <p className="description">Browse content the way you want. Eutenly's Reddit integration let's you view posts from subreddits, users, as well as your home feed. While viewing a post, you can even vote on it or save it.</p>
+
+                        <p className="ready-text">Ready to try it?</p>
+                        <Link className="button" to="/invite">Invite Eutenly</Link>
+
+                    </div>
+
+                    <img className="image" src="/assets/reddit-command.png" alt="An example of the Reddit command's result" />
+
+                </div>
+
+                <div className="feature right">
 
                     <div className="content">
 
@@ -214,7 +237,7 @@ export default () => {
 
                     </div>
 
-                    <img className="image" src="/assets/links-command.png" alt="An example of the Links command's result" />
+                    <img className="image right" src="/assets/links-command.png" alt="An example of the Links command's result" />
 
                 </div>
 
@@ -228,13 +251,13 @@ export default () => {
                             <div className="divider" />
                         </div>
 
-                        <p className="description">Aside from Search, YouTube, Twitter, and Reddit integration, Eutenly also has the following features:</p>
+                        <p className="description">Aside from YouTube, Twitter, Spotify, and Reddit integration, Eutenly also has the following features:</p>
 
                         <ul className="more-features">
-                            <li>Medium Search</li>
-                            <li>Steam Search (Coming Soon)</li>
-                            <li>Top.GG Search (Coming Soon)</li>
-                            <li>Domain Name Search (Coming Soon)</li>
+                            <li>Wikipedia Search</li>
+                            <li>Twitch Integration (Coming Soon)</li>
+                            <li>Apple Music Integration (Coming Soon)</li>
+                            <li>Medium Search (Coming Soon)</li>
                         </ul>
 
                         <p className="ready-text">Ready to try it?</p>
