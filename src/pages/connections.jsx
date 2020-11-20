@@ -36,7 +36,7 @@ export default class Connections extends React.Component {
             {this.state.bannerText && (
                 <div className="banner">
                     {this.state.bannerText}
-                    <button className="close-button" onClick={() => this.setState({ addedConnectionName: null, addedConnection: null, authenticationError: null })}>x</button>
+                    <button className="close-button" onClick={() => this.setState({ bannerText: null, addedConnectionName: null, addedConnection: null, authenticationError: null })}>x</button>
                 </div>
             )}
 
