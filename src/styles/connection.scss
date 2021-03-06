@@ -57,6 +57,11 @@
             &:hover {
                 transform: translate(-50%, -3px);
 
+                &.youtube {
+                    background-color: #ff0000;
+                    box-shadow: 0px 0px 25px 0px #ff000065;
+                }
+
                 &.twitter {
                     background-color: #1da1f2;
                     box-shadow: 0px 0px 25px 0px #1da1f265;
@@ -95,6 +100,11 @@
 
             &:hover {
                 transform: translate(-50%, -3px);
+
+                &.youtube {
+                    border-color: #ff0000;
+                    box-shadow: 0px 0px 25px 0px #ff000065;
+                }
 
                 &.twitter {
                     border-color: #1da1f2;
