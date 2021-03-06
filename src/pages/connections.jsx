@@ -47,6 +47,7 @@ export default class Connections extends React.Component {
 
             {this.state.connections && (
                 <div className="connections">
+                    <Connection name="youtube" displayName="YouTube" connection={this.state.connections.youtube} disconnect={() => this.setState({ disconnect: "youtube", disconnectName: "YouTube" })} />
                     <Connection name="twitter" displayName="Twitter" connection={this.state.connections.twitter} disconnect={() => this.setState({ disconnect: "twitter", disconnectName: "Twitter" })} />
                     <Connection name="spotify" displayName="Spotify" connection={this.state.connections.spotify} disconnect={() => this.setState({ disconnect: "spotify", disconnectName: "Spotify" })} />
                     <Connection name="reddit" displayName="Reddit" connection={this.state.connections.reddit} disconnect={() => this.setState({ disconnect: "reddit", disconnectName: "Reddit" })} />
@@ -72,6 +73,7 @@ export default class Connections extends React.Component {
         const addedConnectionCookie = document.cookie.split(";").find(c => c.trim().startsWith("authed_with"));
         const addedConnectionName = addedConnectionCookie && addedConnectionCookie.split("=")[1];
         const addedConnection = {
+            youtube: "YouTube",
             twitter: "Twitter",
             spotify: "Spotify",
             reddit: "Reddit",
