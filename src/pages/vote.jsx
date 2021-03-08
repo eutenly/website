@@ -7,7 +7,7 @@ export default class Vote extends React.Component {
         <Head
             title="Vote - Eutenly"
             description="Vote for Eutenly on Top.GG for some extra perks."
-            redirect="https://top.gg/bot/733753582507261999/vote"
+            redirect="https://top.gg/bot/817516734654185503/vote"
         />
     );
 
