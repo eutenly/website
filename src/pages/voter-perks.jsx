@@ -31,7 +31,7 @@ export default class VoterPerks extends React.Component {
                         <p className="description">Voting for Eutenly on Top.GG will give you some perks to expand how you can use the bot.</p>
                         <p className="description">Note that votes expire after 12 hours. To keep your perks, you just need to vote again.</p>
 
-                        <Link  className="button"  to="/vote" target="_blank">Vote</Link>
+                        <Link className="button" to="/vote" target="_blank">Vote</Link>
 
                     </div>
                 </div>
@@ -118,11 +118,11 @@ export default class VoterPerks extends React.Component {
                         <p className="description">Rich Panels include people's social profiles, companies' products, music producers' albums, and music's lyrics</p>
 
                         <p className="ready-text">Ready to vote?</p>
-                        <Link  className="button"  to="/vote" target="_blank">Vote</Link>
+                        <Link className="button" to="/vote" target="_blank">Vote</Link>
 
                     </div>
 
-                    <img className="image" src="/assets/search-command.png" alt="An example of the Search command's result" />
+                    <img className="image" src="/assets/search-rich-panel.png" alt="An example of a Search command rich panel" />
 
                 </div>
 
@@ -141,11 +141,11 @@ export default class VoterPerks extends React.Component {
                         <p className="description">When viewing tweets, you can also like and retweet tweets. Eutenly's rich display of information provides an easy way to view content on Discord.</p>
 
                         <p className="ready-text">Ready to vote?</p>
-                        <Link  className="button"  to="/vote" target="_blank">Vote</Link>
+                        <Link className="button" to="/vote" target="_blank">Vote</Link>
 
                     </div>
 
-                    <img className="image right" src="/assets/youtube-command.png" alt="An example of the YouTube command's result" />
+                    <img className="image right" src="/assets/twitter-feed.png" alt="An example of a Twitter feed" />
 
                 </div>
 
@@ -164,11 +164,11 @@ export default class VoterPerks extends React.Component {
                         <p className="description">Eutenly also supports saving posts and viewing your saved posts. While viewing a post, add a reaction to save it to your Reddit account.</p>
 
                         <p className="ready-text">Ready to vote?</p>
-                        <Link  className="button"  to="/vote" target="_blank">Vote</Link>
+                        <Link className="button" to="/vote" target="_blank">Vote</Link>
 
                     </div>
 
-                    <img className="image" src="/assets/search-command.png" alt="An example of the Search command's result" />
+                    <img className="image" src="/assets/reddit-actions.png" alt="An example of the reactions under a Reddit post" />
 
                 </div>
 
@@ -187,11 +187,11 @@ export default class VoterPerks extends React.Component {
                         <p className="description">You can view your saved links anytime in organized pages for easy viewing.</p>
 
                         <p className="ready-text">Ready to vote?</p>
-                        <Link className="button"  to="/vote" target="_blank">Vote</Link>
+                        <Link className="button" to="/vote" target="_blank">Vote</Link>
 
                     </div>
 
-                    <img className="image right" src="/assets/youtube-command.png" alt="An example of the YouTube command's result" />
+                    <img className="image right" src="/assets/links-command.png" alt="An example of the Links command's result" />
 
                 </div>
 
@@ -210,11 +210,11 @@ export default class VoterPerks extends React.Component {
                         <p className="description">You'll also be able to view your playlists, quickly get details about songs and artists, and even remove songs.</p>
 
                         <p className="ready-text">Ready to vote?</p>
-                        <Link  className="button"  to="/vote" target="_blank">Vote</Link>
+                        <Link className="button" to="/vote" target="_blank">Vote</Link>
 
                     </div>
 
-                    <img className="image" src="/assets/twitter-command.png" alt="An example of the Twitter command's result" />
+                    <img className="image" src="/assets/modify-spotify-playlists.png" alt="An example of the Spotify add command" />
 
                 </div>
 
