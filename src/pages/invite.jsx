@@ -7,7 +7,7 @@ export default class Invite extends React.Component {
         <Head
             title="Invite - Eutenly"
             description="Add Eutenly to your server."
-            redirect="https://discord.com/oauth2/authorize?client_id=817516734654185503&scope=bot+applications.commands&permissions=314432"
+            redirect="https://discord.com/oauth2/authorize?client_id=817516734654185503&scope=bot+applications.commands&permissions=388160"
         />
     );
 
