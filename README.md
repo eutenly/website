@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+> Legacy Eutenly has been open sourced and archived in favor of a redesigned version
+
 ## Available Scripts
 
 In the project directory, you can run:
